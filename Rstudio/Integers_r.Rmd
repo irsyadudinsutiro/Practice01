@@ -1,0 +1,49 @@
+---
+title: "integers_rmd"
+output: html_document
+date: "2022-11-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Program to print 1 to 10
+
+**Print integers 1 to 10 without a loop**
+
+**Method 1**
+
+```{r}
+print(1);print(2);print(3);print(4);print(5);print(6);print(7);print(8);print(9);print(10)
+```
+
+**Method 2**
+
+```{r}
+print(1)
+print(1:10)
+cat(1,2,3,4,5,6,7,8,9,10)
+cat(1:10)
+```
+
+**Print integers using a loop**
+
+*Print integers 1 to 10 using a for loop*
+
+```{r}
+for (i in c(1:10)) {
+  #print(i)
+  cat(i, "")
+}
+```
+
+*Print integers 1 to 10 using a while loop*
+
+```{r}
+j<- 1
+while (j<=10) {
+  print(j)
+  j <- j + 1
+}
+```
